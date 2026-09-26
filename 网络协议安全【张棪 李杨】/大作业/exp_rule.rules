@@ -1,0 +1,1 @@
+alert tcp $EXTERNAL_NET &HTTP_PORTS -> $HOME_NET any(msg:"virus detected";content:"pdf";sid:1983330;)
